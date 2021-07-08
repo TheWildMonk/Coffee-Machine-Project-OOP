@@ -145,6 +145,6 @@ cython_debug/
 .idea/
 
 # Project Documentation
-Coffee Machine Program Requirements.pdf
+Coffee Machine (OOP) Documentation.htm
 
 # End of https://www.toptal.com/developers/gitignore/api/python
