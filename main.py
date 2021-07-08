@@ -14,10 +14,8 @@ while not close_machine:
         close_machine = True
     elif user_choice == "report":
         f"{coffee_maker.report()}\n{money_machine.report()}"
-    elif main_menu.find_drink(user_choice) is None:
-        ""
     else:
         user_choice = main_menu.find_drink(user_choice)
         if coffee_maker.is_resource_sufficient(user_choice):
-            if money_machine.make_payment(user_choice.cost):
-                coffee_maker.make_coffee(user_choice)
+            money_machine.make_payment(user_choice.cost)
+            coffee_maker.make_coffee(user_choice)
